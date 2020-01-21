@@ -1,0 +1,37 @@
+<div class="col-md-6 offset-md-3">
+        <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
+
+            <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"></mdb-card-img>
+            <a>
+            <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+      <!--/Card image-->
+
+      <mdb-card-body cascade="true">
+          
+            <div class="md-form">
+                <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>    
+                <input type="email" class="form-control" [(ngModel)]='usuario.email' mdbInput ><br><br>
+                <label>Digite o seu E-mail:</label>
+                <span></span>
+            </div>
+        
+            <div class="md-form">
+                <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+                <input type="password" class="form-control" [(ngModel)]='usuario.senha' mdbInput><br><br>
+                <label>Digite a sua Senha:</label>
+                <span></span>
+                <button mdbBtn color="primary" (click)='loginUser();'>Login</button>
+            </div>
+
+
+      </mdb-card-body>
+
+
+        </mdb-card>   
+</div>
+
+
